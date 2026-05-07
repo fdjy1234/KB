@@ -1,4 +1,4 @@
-# 想法紀錄 / Idea Log
+# 想法記錄 / Idea Log
 
 > **日期 / Date:** YYYY-MM-DD  
 > **狀態 / Status:** 待探索 / 進行中 / 已完成  (to explore / in progress / done)

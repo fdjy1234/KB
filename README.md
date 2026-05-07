@@ -17,8 +17,7 @@ KB/
 - **notes/** — 整理學習心得與知識摘要 / Organize learning notes and knowledge summaries
 - **references/** — 收藏有用的參考資料與連結 / Collect useful references and links
 
-## ✏️ 筆記範本 / Note Template
+## ✏️ 範本 / Templates
 
-每篇筆記建議使用 `notes/template.md` 作為起點。
-
-Each note can be started from `notes/template.md`.
+- **知識筆記** — 使用 `notes/template.md` 作為起點 / Use `notes/template.md` as a starting point for knowledge notes
+- **想法記錄** — 使用 `ideas/template.md` 作為起點 / Use `ideas/template.md` as a starting point for ideas
