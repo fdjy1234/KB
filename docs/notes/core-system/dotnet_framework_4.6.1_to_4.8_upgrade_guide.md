@@ -46,6 +46,18 @@
 > ⚠️ `compilation` 與 `httpRuntime` 兩者都必須設定，缺一不可。  
 > 只改 `compilation` 不會完整套用 4.8 的 runtime 行為。
 
+#### 已取消參考 `Microsoft.CodeDom.Providers.DotNetCompilerPlatform` 後需清理 `system.codedom`
+
+#### 需移除的區塊
+```xml
+<system.codedom>
+  <compilers>
+    <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:1659;1699;1701" />
+    <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:41008 /define:_MYTYPE=\&quot;Web\&quot; /optionInfer+" />
+  </compilers>
+</system.codedom>
+```
+
 ---
 
 ### 2.2 `app.config`（若有桌面/Console 應用程式）
@@ -159,6 +171,7 @@ Step 8. 正式環境部署後監控 Application Event Log，確認無異常
 
 - [ ] `web.config` `compilation targetFramework` 改為 `4.8`
 - [ ] `web.config` `httpRuntime targetFramework` 改為 `4.8`
+- [ ] `web.config` 移除 `system.codedom`（已取消參考 `Microsoft.CodeDom.Providers.DotNetCompilerPlatform` 時）
 - [ ] `app.config` `supportedRuntime sku` 改為 `v4.8`
 - [ ] 對外 HTTPS 呼叫測試正常
 - [ ] Application Event Log 無錯誤
