@@ -71,8 +71,8 @@ flowchart LR
     Client[Client / Frontend / Mobile App] -->|HTTP Request| WebAPI[ASP.NET Web API 2]
     WebAPI -->|GET /users| Read[讀取資源]
     WebAPI -->|POST /users| Create[建立資源]
-    WebAPI -->|PUT /users/{id}| Update[更新資源]
-    WebAPI -->|DELETE /users/{id}| Delete[刪除資源]
+    WebAPI -->|PUT /users/&#123;id&#125;| Update[更新資源]
+    WebAPI -->|DELETE /users/&#123;id&#125;| Delete[刪除資源]
 ```
 
 ---
@@ -137,8 +137,8 @@ flowchart TD
     Role --> Permission[權限判斷]
     Permission --> GET[GET /resources]
     Permission --> POST[POST /resources]
-    Permission --> PUT[PUT /resources/{id}]
-    Permission --> DELETE[DELETE /resources/{id}]
+    Permission --> PUT[PUT /resources/&#123;id&#125;]
+    Permission --> DELETE[DELETE /resources/&#123;id&#125;]
 ```
 
 ---
