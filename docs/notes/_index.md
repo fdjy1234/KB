@@ -4,11 +4,13 @@
 
 ## Core System
 
+- [core-system/RS/BarcodeFontEmbedded.md](core-system/RS/BarcodeFontEmbedded.md)：整理 SSRS/PBIRS 2025 在 PDF 匯出時內嵌 Code39 條碼字型的必要條件、安裝腳本與驗證重點。
 - [dotnet_framework_4.6.1_to_4.8_upgrade_guide.md](core-system/dotnet_framework_4.6.1_to_4.8_upgrade_guide.md)：整理 .NET Framework 4.6.1 升級至 4.8 的設定調整、相容性風險與測試重點。
 - [NetExpress_BSAgent_SeqDia.md](core-system/NetExpress_BSAgent_SeqDia.md)：以 Mermaid 圖示說明 NetExpress 中 BSAgent 與 BSServer 的呼叫流程與元件關係。
 - [NetExpressArch.md](core-system/NetExpressArch.md)：NetExpress 架構文件（目前內容待補）。
 - [RESTfulAPI.md](core-system/RESTfulAPI.md)：說明 RESTful、HTTP 方法、ASP.NET Web API 2 與 RBAC 的關係及實作方式。
 - [SAMService、SAMEntity 是否可同時支援 .NET 10 與 .NET Framework 4.8-2026-04-22-10-30.md](core-system/SAMService、SAMEntity%20是否可同時支援%20.NET%2010%20與%20.NET%20Framework%204.8-2026-04-22-10-30.md)：評估 SAMService/SAMEntity 雙框架支援可行性、阻礙與升級建議。
+- [SDK-style_專案格式教學.md](core-system/SDK-style_%E5%B0%88%E6%A1%88%E6%A0%BC%E5%BC%8F%E6%95%99%E5%AD%B8.md)：介紹 SDK-style 專案格式、與舊式專案差異、遷移步驟與常見問題排除。
 
 ## K8S
 
@@ -22,4 +24,4 @@
 
 - [用curl測試tls連線.md.code-workspace.md](troubleshoot/用curl測試tls連線.md.code-workspace.md)：使用 curl 與 TLS/SNI 參數定位 HTTPS 連線重置問題的排查指南。
 
-最後更新: 2026-05-28
+最後更新: 2026-07-08
